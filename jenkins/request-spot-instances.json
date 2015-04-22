@@ -1,0 +1,17 @@
+{
+    "DryRun": false, 
+    "SpotPrice": "0.0031", 
+    "InstanceCount": 1, 
+    "Type": "t1.micro", 
+    "LaunchSpecification": {
+        "ImageId": "ami-d23b87ba", 
+        "KeyName": "docker.ziu.net", 
+        "SecurityGroups": [
+            "docker devops"
+        ], 
+        "InstanceType": "t1.micro", 
+        "SecurityGroupIds": [
+            "sg-8f338fe2"
+        ]
+    }
+}
