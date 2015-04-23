@@ -2,7 +2,7 @@
     "DryRun": false, 
     "SpotPrice": "0.0031", 
     "InstanceCount": 1, 
-    "Type": "t1.micro", 
+    "Type": "one-time", 
     "LaunchSpecification": {
         "ImageId": "ami-d23b87ba", 
         "KeyName": "docker.ziu.net", 
