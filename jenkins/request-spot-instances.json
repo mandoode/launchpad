@@ -5,7 +5,7 @@
     "Type": "one-time", 
     "LaunchSpecification": {
         "ImageId": "ami-d23b87ba", 
-        "KeyName": "docker.ziu.net", 
+        "KeyName": "docker.deployKey@ziu.net", 
         "SecurityGroups": [
             "docker devops"
         ], 
