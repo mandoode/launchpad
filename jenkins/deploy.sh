@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-APP_NAME="launchpad"
+APP_NAME="launchpad-apache2"
 
 CONTAINER_EXISTS="$(sudo docker ps -a | grep $APP_NAME)"
 if [ "$CONTAINER_EXISTS" == "0" ];then
