@@ -3,7 +3,7 @@ set -x
 
 cd ..
 
-if docker build -t "launchpad-apache2" .
+if sudo docker build -t "launchpad-apache2" .
 then
     echo "docker image built with success..."
 else
@@ -11,5 +11,5 @@ else
     exit 1 # terminate and indicate error
 fi
 
-docker images
+sudo docker images
 
