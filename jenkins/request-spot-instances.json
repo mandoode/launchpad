@@ -4,7 +4,7 @@
     "InstanceCount": 1, 
     "Type": "one-time", 
     "LaunchSpecification": {
-        "ImageId": "ami-d23b87ba", 
+        "ImageId": "ami-ea303d82", 
         "KeyName": "docker", 
         "SecurityGroups": [
             "docker devops"
