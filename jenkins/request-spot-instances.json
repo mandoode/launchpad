@@ -1,6 +1,6 @@
 {
     "DryRun": false, 
-    "SpotPrice": "0.0031", 
+    "SpotPrice": "0.0072", 
     "InstanceCount": 1, 
     "Type": "one-time", 
     "LaunchSpecification": {
@@ -9,7 +9,7 @@
         "SecurityGroups": [
             "docker devops"
         ], 
-        "InstanceType": "t1.micro", 
+        "InstanceType": "m1.small", 
         "SecurityGroupIds": [
             "sg-8f338fe2"
         ]
