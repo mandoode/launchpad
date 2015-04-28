@@ -23,7 +23,7 @@ if [ "$CONTAINER_EXISTS" == "0" ];then
   fi
 fi
 
-sudo docker run --name $APP_NAME $APP_NAME
+sudo docker run --name $APP_NAME -d $APP_NAME
 
 if [ "$?" != "0" ];then
 	echo "ERROR:  could not start container $APP_NAME"
