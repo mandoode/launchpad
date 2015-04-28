@@ -3,11 +3,11 @@ set -x
 
 APP_NAME="launchpad-apache2"
 
-CONTAINER_EXISTS="$(sudo docker ps -a | grep $APP_NAME)"
-if [ "$CONTAINER_EXISTS" == "0" ];then
+sudo docker ps -a | grep $APP_NAME
+if [ "$?" == "0" ];then
 
-  CONTAINER_RUNNING="$(sudo docker ps | grep $APP_NAME)"
-  if [ "$CONTAINER_RUNNING" == "0" ];then
+  sudo docker ps | grep $APP_NAME
+  if [ "$?" == "0" ];then
 	sudo docker stop $APP_NAME
 	if [ "$?" != "0" ];then
 		echo "could not stop running container $APP_NAME"
