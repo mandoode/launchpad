@@ -9,12 +9,12 @@ if [ "$?" == "0" ];then
   sudo docker ps | grep $APP_NAME
   if [ "$?" == "0" ];then
 	sudo docker stop $APP_NAME
-	if [ "$?" != "0" ];then
+	if ! [ "$?" == "0" ];then
 		echo "could not stop running container $APP_NAME"
 		exit -1
 	else
 		sudo docker rm $APP_NAME
-		if [ "$?" != "0" ];then
+		if ! [ "$?" == "0" ];then
 			echo "ERROR: could not remove container $APP_NAME" 	
 			exit -1
 		fi
