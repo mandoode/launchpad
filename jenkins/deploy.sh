@@ -18,7 +18,6 @@ if [ "$?" == "0" ];then
 			echo "ERROR: could not remove container $APP_NAME" 	
 			exit -1
 		fi
-		exit -1
 	fi
   fi
 fi
