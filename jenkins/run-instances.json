@@ -1,0 +1,14 @@
+{
+    "DryRun": true, 
+    "ImageId": "emi-7da50a50", 
+    "MinCount": 1, 
+    "MaxCount": 1, 
+    "KeyName": "dockerEuca", 
+    "SecurityGroupIds": [
+        "default"
+    ], 
+    "InstanceType": "m1.small", 
+    "Placement": {
+        "AvailabilityZone": "default", 
+    }, 
+}
