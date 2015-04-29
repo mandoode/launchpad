@@ -8,7 +8,4 @@
         "default"
     ], 
     "InstanceType": "m1.small", 
-    "Placement": {
-        "AvailabilityZone": "default" 
-    } 
 }
