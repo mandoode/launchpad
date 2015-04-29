@@ -36,7 +36,7 @@ fi
 
 
 #WAIT#
-aws ec2 wait instance-running --instance-ids $instance_id --profile ziunet
+aws --endpoint-url $EC2_URL ec2 wait instance-running --instance-ids $instance_id --profile ziunet
 if [ "$?" == "0" ];then
 	echo "instance [$instance_id] has started"
 else	
