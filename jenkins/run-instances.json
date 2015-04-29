@@ -7,5 +7,5 @@
     "SecurityGroupIds": [
         "default"
     ], 
-    "InstanceType": "m1.small", 
+    "InstanceType": "m1.small"
 }
