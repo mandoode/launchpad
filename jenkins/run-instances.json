@@ -1,5 +1,5 @@
 {
-    "DryRun": true, 
+    "DryRun": false, 
     "ImageId": "emi-7da50a50", 
     "MinCount": 1, 
     "MaxCount": 1, 
@@ -9,6 +9,6 @@
     ], 
     "InstanceType": "m1.small", 
     "Placement": {
-        "AvailabilityZone": "default", 
+        "AvailabilityZone": "default" 
     } 
 }
