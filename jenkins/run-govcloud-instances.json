@@ -4,7 +4,7 @@
     "MaxCount": 1, 
     "KeyName": "peter.ziu", 
     "SecurityGroupIds": [
-        "default"
+        "sg-5b0f1439"
     ], 
     "InstanceType": "m1.medium"
 }
