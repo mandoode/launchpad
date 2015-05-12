@@ -1,10 +1,10 @@
 {
-    "ImageId": "ami-6e593d4d", 
+    "ImageId": "ami-47b2d364", 
     "MinCount": 1, 
     "MaxCount": 1, 
     "KeyName": "peter.ziu", 
     "SecurityGroupIds": [
         "default"
     ], 
-    "InstanceType": "m1.small"
+    "InstanceType": "m1.medium"
 }
