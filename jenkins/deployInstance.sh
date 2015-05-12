@@ -2,7 +2,7 @@
 
 source /home/docker/.aws/eucarc
 
-JSON_FILE="`pwd`/run-instances.json"
+JSON_FILE="`pwd`/$1"
 
 echo "Checking for JSON file..."
 if [ -f "$JSON_FILE" ];
