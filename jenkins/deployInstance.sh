@@ -2,7 +2,7 @@
 
 JSON_FILE="`pwd`/$1"
 
-source /home/docker/.aws/ecuarc
+source /home/docker/.aws/eucarc
 
 echo "Checking for JSON file..."
 if [ -f "$JSON_FILE" ];
