@@ -1,9 +1,8 @@
 #!/bin/bash
 
-source /home/docker/.aws/plugrc
-
 JSON_FILE="`pwd`/$1"
-AWS_PROFILE="$2"
+
+source /home/docker/.aws/ecuarc
 
 echo "Checking for JSON file..."
 if [ -f "$JSON_FILE" ];
@@ -16,7 +15,7 @@ fi
 
 
 #run the instance#
-instance_id="$(aws --endpoint-url $EC2_URL ec2 run-instances --cli-input-json file://$JSON_FILE --query Instances[].InstanceId --output text --profile $AWS_PROFILE)"
+instance_id="$(aws --endpoint-url $EC2_URL ec2 run-instances --cli-input-json file://$JSON_FILE --query Instances[].InstanceId --output text)"
 
 if [ "$?" == "0" ];then
     if [ "$instance_id" == "None" ];then
@@ -37,7 +36,7 @@ fi
 
 
 #WAIT#
-aws --endpoint-url $EC2_URL ec2 wait instance-running --instance-ids $instance_id --profile $AWS_PROFILE
+aws --endpoint-url $EC2_URL ec2 wait instance-running --instance-ids $instance_id
 if [ "$?" == "0" ];then
 	echo "instance [$instance_id] has started"
 else	
